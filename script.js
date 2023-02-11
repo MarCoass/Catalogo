@@ -1,7 +1,8 @@
 const contenedor = document.getElementById("cuerpo");
 let arrayNodos = [];
 for (i = 0; i < array.length; i++) {
-  console.log(array[i]);
+    let nombreEncode = encodeURIComponent("Hola! Me interesa el set "+ array[i]["Descripcion"] + " con forma " + array[i]["Forma"])
+    let urlMensaje = "https://wa.me/542994677550?text=" + nombreEncode
   //crea una tarjeta por cada nodo
   let nodo = document.createElement("div");
   let card =
@@ -20,8 +21,9 @@ for (i = 0; i < array.length; i++) {
     '<li class="list-group-item">Forma: ' +
     array[i]["Forma"] +
     "</li>" +
-    "</ul>" +
-    "</div>";
+    "</ul> " +
+    '<div class="d-grid gap-2 col-6 mx-auto"><a href="'+urlMensaje+'" class="btn btn-sm btn-outline-rosa"> <i class="bi bi-whatsapp" style="font-size: 1rem; " ></i>  Comprar</a></div>' +
+   "</div>";
   nodo.innerHTML= card;
   arrayNodos.push(card);
   contenedor.appendChild(nodo);

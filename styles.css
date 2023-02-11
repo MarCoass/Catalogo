@@ -6,3 +6,13 @@
 #header, footer{
     background-color: var(--main-color-azul);
 }
+
+.btn-outline-rosa{
+    color: var(--main-color-rosa);
+    border-color: var(--main-color-rosa);
+}
+
+.btn-outline-rosa:hover{
+    color: wheat;
+    background-color: var(--main-color-rosa);
+}

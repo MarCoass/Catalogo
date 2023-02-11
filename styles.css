@@ -1,3 +1,8 @@
-.contenedorNodos{
-    display:flex;
+:root{
+    --main-color-rosa: #e54b4bff;
+    --main-color-azul: #000e38ff;
+}
+
+#header, footer{
+    background-color: var(--main-color-azul);
 }
